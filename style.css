@@ -1,0 +1,59 @@
+
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	margin-top: 2rem;
+	padding: 3rem 1rem;
+}
+
+.qnaBox {
+	background: transparent;
+	width: 100%;
+	padding: 0;
+	cursor: pointer;
+	margin-bottom: 2rem;
+}
+
+.question {
+	padding: 0.7rem 1rem;
+	border: 0.5px solid lightgrey;
+	border-radius:3px 3px 0 0;
+	border-bottom-width: 0.5px;
+	transition: all 0.4s ease;
+}
+.question:hover {
+	background: #e2e6ea50;
+}
+.question.active {
+	background: #e2e6ea;
+}
+
+.answer {
+	background: #fff;
+	overflow: hidden;
+	height: 0px;
+	transition: height 0.4s ease;
+}
+.answer > p {
+	padding: 0.4rem 0.7rem;
+	border: 0.5px solid lightgrey;
+	border-radius:0 0 3px 3px;
+	border-top: 0;
+}
+
+h5 {
+	font-weight: bold;
+}
+
+p {
+	white-space: pre-line;
+}
+p::before {
+	content: "Ans- ";
+	font-weight: bold;
+}
